@@ -1,0 +1,14 @@
+[Unit]
+Description=Captive-portal watchdog (probe / re-login / MAC rotation)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/wifi-autologin
+ExecStart=/opt/wifi-autologin/plenv/bin/python /opt/wifi-autologin/watchdog/watchdog.py --run
+Nice=10
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,5 @@
+# Copy this file to telegram.conf and fill in both values (no quotes).
+# Token: message @BotFather -> /newbot -> copy the token.
+# Chat:  message @userinfobot -> numeric id.
+TOKEN=
+CHAT=

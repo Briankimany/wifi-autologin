@@ -1,0 +1,24 @@
+# Local Python environment / caches
+.venv/
+__pycache__/
+*.py[cod]
+
+# Runtime artifacts
+snapshots/
+login_debug.png
+watchdog/state.json
+watchdog/state.json.tmp
+watchdog/watchdog.log
+
+# Live secrets (voucher code, telegram bot config)
+watchdog/code.txt
+watchdog/telegram.conf
+.env
+
+# Playwright browser cache and large offline-install binaries
+ms-playwright/
+browser/
+wheels/
+
+# Unrelated legacy project files, kept local only
+legacy/

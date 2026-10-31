@@ -1,0 +1,11 @@
+[Unit]
+Description=Run the captive-portal watchdog every 3 minutes
+
+[Timer]
+OnBootSec=60
+OnUnitActiveSec=3min
+RandomizedDelaySec=30
+Persistent=true
+
+[Install]
+WantedBy=timers.target

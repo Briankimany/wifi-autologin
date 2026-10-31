@@ -1,0 +1,4 @@
+# Copy this file to code.txt and put one voucher code per line.
+# The watchdog reuses the FIRST non-empty line.
+# When the code is exhausted, replace it (e.g. via SSH) and the watchdog will
+# pick it up on the next pass automatically.
